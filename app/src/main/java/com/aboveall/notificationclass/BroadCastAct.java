@@ -40,35 +40,5 @@ public class BroadCastAct extends AppCompatActivity {
     }
 
 
-    private void DisplayNotification(){
-
-        Notification notification=new NotificationCompat.Builder(this, CreateChannel.CHANNEL_1)
-
-                .setSmallIcon(R.drawable.ic_signal_wifi_off_black_24dp)
-                .setContentTitle("No Connection")
-                .setContentText("No Connection, Please Check"+id)
-                .setCategory(NotificationCompat.CATEGORY_SYSTEM)
-                .build();
-
-        notificationManagerCompat.notify(id,notification);
-        id++;
-
-    }
-
-
-    private void DisplayNotification2(){
-
-        Notification notification=new NotificationCompat.Builder(this,CreateChannel.CHANNEL_2)
-
-                .setSmallIcon(R.drawable.ic_sms_black_24dp)
-                 .setContentTitle("Connection")
-                .setContentText("Connected, "+id)
-                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                .build();
-
-        notificationManagerCompat.notify(id,notification);
-        id++;
-
-    }
 
 }
